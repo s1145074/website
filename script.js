@@ -25,7 +25,7 @@ function home() {
 
 function showAlert() {
     document.getElementById('custom-alert').style.display = 'block';
-    document.getElementById('alert-message').innerHTML = 'Code niet herkend. Probeer opnieuw!';
+    document.getElementById('alert-message').innerHTML = ' ! Code niet herkend. Probeer opnieuw!';
   }
 
 closeAlert()
