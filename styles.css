@@ -1,0 +1,61 @@
+
+
+h1 {
+    font-family: 'American Typewriter';
+    font-weight: 400;
+    font-size: 40;
+}
+
+body {
+    text-align: center;
+    background-color: #FFFAEF;
+    margin: 10%;
+}
+
+input {
+    background-color: #FFFAEF;
+    color: #C2B187;
+    border: 5px solid #C2B187;
+    padding: 5px 5px;
+    
+}
+
+.button {
+    background-color: #79622B;
+    border: none;
+    color: #FFFAEF;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+  }
+
+button:hover {
+    background-color: #C2B187;
+}
+
+
+.home{
+    border: none;
+    color: #FFFAEF;
+    padding: 0px 0px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0px;
+}
+
+img:hover {
+    content: url("logo_hover.pdf");
+ } 
+
+ 
+
+#alert-message {
+    color: #FFFAEF;
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: #990101;
+}
