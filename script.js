@@ -28,6 +28,8 @@ function showAlert() {
     document.getElementById('alert-message').innerHTML = 'Code niet herkend. Probeer opnieuw!';
   }
 
-  function closeAlert() {
+closeAlert()
+
+function closeAlert() {
     document.getElementById('custom-alert').style.display = 'none';
   }

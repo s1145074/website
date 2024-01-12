@@ -48,14 +48,15 @@ img:hover {
     content: url("logo_hover.pdf");
  } 
 
- 
 
 #alert-message {
     color: #FFFAEF;
     font-family: 'Open Sans Hebrew', sans-serif;
     font-size: 10px;
     text-align: center;
-    padding: 10px 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 5px 5px;
     font-weight: bold;
     background-color: #990101;
 }
