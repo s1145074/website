@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pin Code Checker</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -14,18 +15,7 @@
         <button type="button" onclick="checkPinCode()">Check</button>
     </form>
 
-    <script>
-        function checkPinCode() {
-            var enteredPin = document.getElementById("pinCode").value;
-            var correctPin = "1234"; // Replace with your correct pin code
-
-            if (enteredPin === correctPin) {
-                window.location.href = "https://s1145074.github.io/inpixpe/";
-            } else {
-                alert("Incorrect Pin Code. Please try again.");
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
