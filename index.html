@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <title>Dit is mijn baassie websitetje</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Code Checker</title>
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            margin: 0;
+            background-color: #FFFAEF;
+        }
+
+        #pinInput {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #resultMessage {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #990101;
+        }
+
+        .error {
+            color: #990101;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Screenshots lijken aan te tonen dat Windows Kladblok AI-functie krijgt</h1>
-<p style="font-weight: bold">Er zijn stukjes code en screenshots verschenen die erop duiden dat de Windows-app Kladblok een AI-functie krijgt. Die zou Cowriter gaan heten en die kan onder meer teksten gaan aanvullen. Het is onbekend wanneer de functie uitkomt.</p>
-<p>De functie zou Cowriter gaan heten, zo blijkt uit de screenshots die PhantomOcean3 en Tero Alhonen hebben gedeeld. Verwijzingen naar de functie zijn al te vinden in de map van Kladblok en de screenshots tonen onder meer een marketingrender en een screenshot van hoe het er in de praktijk uit ziet. De code wijst er onder meer op dat gebruikers 'credits' moeten hebben om de functie te gebruiken.</p>
-<p>De functie kan teksten aanvullen volgens diverse vereisten op basis van input van gebruikers in Kladblok. Daardoor kunnen gebruikers onder meer teksten langer of korter maken of de toon ervan veranderen. Dat gebeurt vermoedelijk net als andere Copilot-functies op basis van OpenAI's GPT-taalmodellen. Het is onbekend wanneer Microsoft de functie wil gaan aankondigen. Vorig jaar kwam al Cocreator uit in Paint.</p>
-<figure>
-<img src="https://tweakers.net/i/wuVAAZL7lrOR-ji5S08CjKJIZZU=/i/2006358144.jpeg" alt="Dinosaur" />
-<img src="https://tweakers.net/i/FBXPswvO3yPRgga3H7RGD5mqud4=/i/2006358142.jpeg" alt="Dinosaur" />
-<img src="https://tweakers.net/i/ZS0-PDOJKFo-v-ReS9fsEFui19U=/i/2006358140.jpeg" alt="Dinosaur" />
-</figure>
-<a href="https://tweakers.net/nieuws/217384/screenshots-lijken-aan-te-tonen-dat-windows-kladblok-ai-functie-krijgt.html">https://tweakers.net/nieuws/217384/screenshots-lijken-aan-te-tonen-dat-windows-kladblok-ai-functie-krijgt.html</a>
+    <div id="pinContainer">
+        <label for="pinInput"></label>
+        <input type="number" id="pinInput" maxlength="4" placeholder="pincode...">
+        <button id ="myBtn" onclick="checkPin()">Check</button>
+        <p id="resultMessage"></p>
+    </div>
+
+
+    
+    <script>
+        function checkPin() {
+            var pinInput = document.getElementById('pinInput').value;
+            var resultMessage = document.getElementById('resultMessage');
+
+            // Check if the entered PIN is "4450"
+            if (pinInput === "4450") {
+                window.location.href = "index.html";
+            } else {
+                resultMessage.textContent = "Invalid PIN! Please enter the correct PIN.";
+                resultMessage.classList.add('error');
+            }
+        }
+        var input = document.getElementById("pinInput");
+        input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("myBtn").click();
+            }
+            });
+    </script>
+
 </body>
 </html>
