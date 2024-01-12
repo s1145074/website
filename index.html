@@ -3,64 +3,28 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pin Code Checker</title>
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-            margin: 0;
-            background-color: #FFFAEF;
-        }
-
-        #pinInput {
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        #resultMessage {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #990101;
-        }
-
-        .error {
-            color: #990101;
-        }
-    </style>
 </head>
 <body>
 
-    <div id="pinContainer">
-        <label for="pinInput"></label>
-        <input type="number" id="pinInput" maxlength="4" placeholder="pincode...">
-        <button id ="myBtn" onclick="checkPin()">Check</button>
-        <p id="resultMessage"></p>
-    </div>
+    <h1>Enter Pin Code:</h1>
 
+    <form id="pinCodeForm">
+        <label for="pinCode">Pin Code:</label>
+        <input type="text" id="pinCode" name="pinCode" required>
+        <button type="button" onclick="checkPinCode()">Check</button>
+    </form>
 
-    
     <script>
-        function checkPin() {
-            var pinInput = document.getElementById('pinInput').value;
-            var resultMessage = document.getElementById('resultMessage');
+        function checkPinCode() {
+            var enteredPin = document.getElementById("pinCode").value;
+            var correctPin = "1234"; // Replace with your correct pin code
 
-            // Check if the entered PIN is "4450"
-            if (pinInput === "4450") {
-                window.location.href = "index.html";
+            if (enteredPin === correctPin) {
+                window.location.href = "https://s1145074.github.io/inpixpe/";
             } else {
-                resultMessage.textContent = "Invalid PIN! Please enter the correct PIN.";
-                resultMessage.classList.add('error');
+                alert("Incorrect Pin Code. Please try again.");
             }
         }
-        var input = document.getElementById("pinInput");
-        input.addEventListener("keypress", function(event) {
-            if (event.key === "Enter") {
-                event.preventDefault();
-                document.getElementById("myBtn").click();
-            }
-            });
     </script>
 
 </body>
