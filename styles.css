@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 
+
 h1 {
     font-family: 'Courier Prime';
     font-size: 40px;
@@ -12,8 +13,7 @@ p {
 
 footer {
     font-family: 'Courier Prime';
-    margin-top: 35%;
-    margin-bottom: 0%;
+    margin-top: 100%;
 }
 
 header {
@@ -35,7 +35,7 @@ input {
     
 }
 
-.button {
+button {
     background-color: #79622B;
     border: none;
     color: #FFFAEF;
@@ -51,11 +51,27 @@ button:hover {
 
 
 .home{
-    border: none;
-    color: #FFFAEF;
-    background-color: #79622B;
     padding: 0px 0px;
-    text-align: center;
     display: inline-block;
-    font-size: 0px;
+    margin-top: -10%;
 }
+
+
+#message {
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    padding: 10px 16px;
+    color: white;
+    background-color: #990101;
+}
+
+
+@media screen and (max-width: 500px){
+    
+  }
+  

@@ -1,38 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Checker</title>
-    <link rel="icon" type="image/x-icon" href="logo_1.ico">
+    <link rel="icon" type="image/x-icon" href="img/logo_1.ico">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-
-    <header>
-      <button class="home" onclick="home()">
-        <img src="logo_4.pdf" alt="logo">
-      </button>
-    </header>
-
 </head>
 <body>
 
 
-    <h1>Check de code</h1>
-    <p>Vul hieronder de code die de puzzel u heeft gegeven. </p>
+    <button class="home" onclick="home()">
+      <img src="logo_4.pdf" alt=""></img>
+    </button>
 
-    <form id="code_form">
-        <label for="code_label"></label>
-        <input type="text" id="input_code" placeholder="bijv. 1234" name="input_code" required>
-        <button class="button" id="check" type="button" onclick="check()">check</button>
+    <h1>Check de code</h1>
+    <p>Vul hieronder de code in die u uit de puzzel heeft gekregen.</p>
+
+    <form onsubmit="check_input(); return false;">
+        <input type="text" id="input_box" placeholder="bijv. 1234" oninput="reset_message()" />
+        <button type="submit">check</button>
+        
+        <div id="message_container" style="display: none;">
+          <p id="message"></p>
+        </div>
+
     </form>
 
 
-    <div id="custom-alert">
-      <p id="alert-message"></p>
-    </div>
-
     <footer>Murder Mystery | Pixel Perfect | Groep 23</footer>
-    
 
 </body>
 </html>
