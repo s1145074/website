@@ -1,16 +1,4 @@
-function checkPinCode() {
-    var enteredPin = document.getElementById("pinCode").value;
-    var correctPin = "1234"; // Replace with your correct pin code
-
-    if (enteredPin === correctPin) {
-        closeAlert();
-        window.location.href = "https://s1145074.github.io/inpixpe/";
-    } else {
-        showAlert();
-    }
-}
-
-var input = document.getElementById("pinCode");
+var input = document.getElementById("input");
 
 input.addEventListener("keypress", function(event) {
   if (event.key === "Enter") {
@@ -19,17 +7,26 @@ input.addEventListener("keypress", function(event) {
   }
 });
 
+
 function home() {
     window.location.href = "index.html"
 }
 
-function showAlert() {
-    document.getElementById('custom-alert').style.display = 'block';
-    document.getElementById('alert-message').innerHTML = ' ! Code niet herkend. Probeer opnieuw!';
-  }
 
-closeAlert()
+function check() {
+  var user_input = document.getElementById("input_code").value;
 
-function closeAlert() {
-    document.getElementById('custom-alert').style.display = 'none';
+  if (user_input === "1234") {
+      showAlert("Success! Code is valid.");
+  } else {
+      showAlert("Error! Please enter the correct code (1234).");
   }
+}
+
+function showAlert(message) {
+  document.getElementById("alert-message").innerText = message;
+  document.getElementById("custom-alert").style.display = "block";
+  setTimeout(function() {
+      document.getElementById("custom-alert").style.display = "none";
+  }, 3000);
+}
