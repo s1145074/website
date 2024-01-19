@@ -6,6 +6,10 @@ function check_input() {
     reset_message()
     window.location.href = "https://www.google.nl/";
   }
+  else if (user_input === "lennard") {
+    reset_message()
+    window.location.href = "lennard/index.html";
+  }
   else if (user_input === "rick") {
     reset_message()
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+
+
+html {
+  background-color: #FFFAEF;
+}
+
+h1 {
+  font-family: 'Courier Prime';
+  font-size: 40px;
+}
+
+h2 {
+  font-family: 'Courier Prime';
+  font-size: 22px;
+}
+
+p {
+  font-family: 'Open Sans Hebrew', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  font-family: 'Courier Prime';
+  color: #79622B;
+}
+
+main {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 600px;
+  margin: 50px auto;
+  position: relative;
+  
+}
+
+time {
+  font-family: 'Courier Prime';
+}
+
+footer {
+  text-align: center;
+  margin-top: 20%;
+}
+
+.navbar {
+  margin-top: -1%;
+  margin-left: -1%;
+  margin-right: -1%;
+  background-color: #79622B;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: center;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1% 1%;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #C2B187;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #DBB559;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  background-color: #C2B187;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.pdf_view {
+  margin-left: 30%;
+}
+
+
+.event p {
+  font-family: 'Courier Prime';
+  color: #FFFAEF;
+}
+
+.event {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  width: 50%;
+  background-color: #DBB559;
+  transition: transform 0.3s;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.event:hover {
+  transform: scale(1.05);
+}
+
+.event:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+}
+
+.event .info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 75%;
+  background-color: #C2B187;
+  color: #FFFFFF;
+  padding: 10px;
+  z-index: 3;
+}
+
+.event:nth-child(even) .info {
+  left: auto;
+  right: 0;
+}
+
+.event:hover .info {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+  .dropdown-content a {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  main {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .pdf_view {
+    margin-left: 10%;
+  }
+
+  .pdf_view object {
+    width: 90%;
+    height: 450px;
+  }
+ 
+
+  .event h1 {
+    font-size: 20px;
+  }
+
+  .event a,p {
+    font-size: 10px;
+  }
+
+  .navbar {
+    margin-top: -2.1%;
+    margin-left: -2.1%;
+    margin-right: -2.1%;
+  }
+}
+
