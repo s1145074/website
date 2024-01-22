@@ -1,0 +1,43 @@
+
+
+
+
+.pdf-container {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+}
+
+.pdf-container h1{
+    font-size: 48px;
+    color: white;
+}
+
+embed {
+    width: 70%;
+    height: 70%;
+    border: 2px solid #333;
+}
+
+/* styles.css */
+
+.moodboard {
+    text-align: center;
+    margin: 20px;
+}
+
+.moodboard h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.moodboard img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+

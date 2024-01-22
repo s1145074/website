@@ -10,6 +10,14 @@ function check_input() {
     reset_message()
     window.location.href = "lennard/index.html";
   }
+  else if (user_input === "ruben") {
+    reset_message()
+    window.location.href = "ruben/index.html";
+  }
+  else if (user_input === "mo") {
+    reset_message()
+    window.location.href = "mo/index.html";
+  }
   else if (user_input === "rick") {
     reset_message()
     window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
