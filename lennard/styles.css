@@ -116,6 +116,11 @@ footer {
   transition: transform 0.3s;
   cursor: pointer;
   z-index: 2;
+  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  
 }
 
 .event:hover {
@@ -148,7 +153,10 @@ footer {
   display: block;
 }
 
-
+.event.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
