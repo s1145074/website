@@ -10,7 +10,7 @@ function check_input() {
     reset_message()
     window.location.href = "lennard/index.html";
   }
-  else if (user_input === "ruben") {
+  else if (user_input === "1738") {
     reset_message()
     window.location.href = "ruben/index.html";
   }

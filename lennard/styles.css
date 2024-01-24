@@ -60,7 +60,7 @@ footer {
 }
 
 .navbar li {
-  float: center;
+  text-align: center;
 }
 
 .navbar a {
@@ -101,6 +101,11 @@ footer {
   margin-left: 30%;
 }
 
+.pdf_view object {
+  width: 60%;
+  height: 450px;
+}
+
 
 .event p {
   font-family: 'Courier Prime';
@@ -125,6 +130,7 @@ footer {
 
 .event:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .event:nth-child(even) {
@@ -164,16 +170,16 @@ footer {
 
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
   .dropdown-content a {
     font-size: 24px;
   }
 
   h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
   h2 {
-    font-size: 15px;
+    font-size: 13px;
   }
   main {
     margin-left: 5%;
@@ -197,6 +203,19 @@ footer {
   .event a,p {
     font-size: 10px;
   }
+
+  .event .info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 60%;
+    background-color: #C2B187;
+    color: #FFFFFF;
+    padding: 10px;
+    z-index: 3;
+  }
+
 
   .navbar {
     margin-top: -2.1%;
