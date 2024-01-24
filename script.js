@@ -6,15 +6,15 @@ function check_input() {
     reset_message()
     window.location.href = "lennard/index.html";
   }
-  else if (user_input === "lennard") {
+  else if (user_input === "michiel") {
     reset_message()
-    window.location.href = "lennard/index.html";
+    window.location.href = "michiel/index.html";
   }
   else if (user_input === "1738") {
     reset_message()
     window.location.href = "ruben/index.html";
   }
-  else if (user_input === "mo") {
+  else if (user_input === "7542") {
     reset_message()
     window.location.href = "mo/index.html";
   }
